@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        .registration {
+            width: 1000px;
+            padding: 40px;
+            position: absolute;
+            background: #1b9bff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .registration h1 {
+            text-align: center;
+
+        }
+
+        .registration input[type='text'],
+        .registration input[type='email'],
+        .registration input[type='password'],
+        .registration input[type='number'] {
+            border: 0;
+            background: white;
+            display: block;
+            margin: 20px auto;
+            text-align: left;
+            padding: 12px 25px;
+            width: 700px;
+            font-weight: bold;
+            outline: none;
+            transition: 0.25s;
+        }
+
+        .registration input[type='text']:focus,
+        .registration input[type='email']:focus,
+        .registration input[type='password']:focus,
+        .registration input[type='number']:focus {
+            border: 2px solid black;
+
+        }
+
+        
+        
+
+        .registration input[type='submit'] {
+            border: 0;
+            background: white;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            padding: 12px 25px;
+            width: 125px;
+            font-weight: bold;
+            outline: none;
+            border-radius: 20px;
+            transition: 0.25s;
+            height: 40px;
+
+
+
+        }
+
+        .registration input[type='submit']:hover {
+            width: 175px;
+            background: black;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="backend.php" class="registration" method="POST">
+            <h1>Student Registration</h1>
+            <input type="text" placeholder="Full Name" value="" name="fname">
+            <input type="email" placeholder="Email Id" value="" name="email">
+            <input type="password" placeholder="Password" value="" name="password">
+            <input type="number" placeholder="Enrollment Number" value="" name="rolnum">
+            <input type="number" placeholder="Phone Number" value="" name="phonenum">
+            <input type="text" placeholder="College Name" value="" name="colname">
+            <input type="text" placeholder="Branch Name" value="" name="branch">
+            <input type="number" placeholder="Semester" value="" name="sem">
+            <input type="submit" name="" id="" value="Submit">
+    </div>
+</body>
+
+</html>
